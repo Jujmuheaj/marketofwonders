@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market of Wonders - Billetterie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Styles pour la section Billetterie */
+        section {
+            text-align: center;
+            background-color: #F9F9F9;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #4F5A37;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        /* Tableau */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            padding: 15px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #4F5A37;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table td {
+            color: #4F5A37;
+            font-size: 1.1rem;
+        }
+
+        /* Bouton d'achat */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background-color: #4F5A37;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #A8AEA7;
+            color: #4F5A37;
+            transform: translateY(-3px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="assets/img/logo.png" alt="Logo du Market of Wonders">
+        <h1>
+            <span class="title-part">Market</span><br>
+            <span class="title-part">of</span><br>
+            <span class="title-part">Wonders</span>
+        </h1>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="questions.html">FAQ</a></li>
+            <li><a href="partenaires.html">Nos Partenaires</a></li>
+            <li><a href="billetterie.html">Billetterie</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Section Billetterie -->
+        <section>
+            <h2>Billetterie</h2>
+            <p>Réservez vos billets pour le <strong>Market of Wonders</strong> et profitez d'une expérience unique !</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type de billet</th>
+                        <th>Tarif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adultes</td>
+                        <td>35€</td>
+                    </tr>
+                    <tr>
+                        <td>Enfants (moins de 12 ans)</td>
+                        <td>15€</td>
+                    </tr>
+                    <tr>
+                        <td>Enfants (moins de 3 ans)</td>
+                        <td>Gratuit</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Pour acheter vos billets, rendez-vous sur notre plateforme sécurisée ou contactez-nous directement.</p>
+            <a href="https://www.example.com/acheter" class="btn">Acheter mes billets</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Tous droits réservés</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/marketofwonders13" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61571174407596" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@marketofwonders13" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
