@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     font-family: 'Alice', serif;
     margin: 0;
@@ -67,7 +68,6 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-
 nav ul li a::before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -86,67 +86,7 @@ nav ul li:nth-child(3) a::before {
     content: '\f0f1'; /* Partenaires */
 }
 
-/* --- Responsive design --- */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 10px; /* Réduit le padding sur mobile */
-    }
-
-    header img {
-        margin-bottom: 20px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        padding: 8px 16px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    footer a {
-        font-size: 16px;
-        padding: 8px 16px;
-        margin: 0 10px;
-    }
-
-    .social-icons i {
-        font-size: 30px;
-    }
-
-    .image-container {
-        grid-template-columns: 1fr;
-    }
-
-    .accordion-item {
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    .panel {
-        font-size: 14px;
-    }
-}
-
+/* Contenu principal */
 main {
     padding: 60px 20px;
     background-color: #ffffff;
@@ -193,6 +133,46 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Partenaires */
+.partenaire-section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.partenaire {
+    text-align: center;
+}
+
+.partenaire img.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.partenaire img.image-large {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.partenaire .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partenaire .image-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
 footer {
     background-color: #4F5A37;
     color: #ffffff;
@@ -239,6 +219,7 @@ footer a:hover {
     filter: invert(1);
 }
 
+/* Accordion FAQ */
 .accordion {
     width: 100%;
     margin: 20px auto;
@@ -276,4 +257,56 @@ footer a:hover {
 
 .panel p {
     margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    header img {
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    footer a {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 0 10px;
+    }
+
+    .social-icons i {
+        font-size: 30px;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
 }
